@@ -1,0 +1,89 @@
+:root {
+  --mainColor: #004da4;
+}
+
+body {
+  color: var(--mainColor);
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--mainColor);
+  font-weight: 600;
+  letter-spacing: 0.9px;
+  position: relative;
+}
+
+::selection {
+  background-color: var(--mainColor);
+  color: #fff;
+}
+
+a {
+  cursor: pointer;
+}
+
+.mainColor {
+  color: var(--mainColor);
+}
+
+.btn-main {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #004da4;
+  --bs-btn-border-color: #004da4;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #003694;
+  --bs-btn-hover-border-color: #003694;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #003694;
+  --bs-btn-active-border-color: #003694;
+}
+
+main {
+  min-height: 100vh;
+  background-image: url("../images/background.png");
+  background-size: cover;
+  background-position: center;
+}
+
+main nav {
+  box-shadow: 0px -8px 22px 4px rgba(0, 77, 165, 0.45);
+  background-color: rgb(253 253 253 / 43%) !important;
+}
+
+.navbar-toggler {
+  border: none;
+  color: var(--mainColor);
+  font-size: 1.375rem;
+}
+
+main .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+main .form-control:focus {
+  border-color: #004da413;
+  box-shadow: 0 0 0 0.25rem rgba(0, 76, 163, 0.25);
+}
+
+.boxContainer {
+  max-width: 600px;
+  margin: auto;
+  background-color: rgb(253 253 253 / 43%);
+  box-shadow: -6px 10px 15px -5px rgba(0, 77, 165, 0.45);
+  border: #004da413 1px solid;
+}
+
+@media screen and (max-width: 400px) {
+  :root {
+    font-size: 12px;
+  }
+}

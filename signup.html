@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>Sign up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main class="py-5">
+      <section class="py-5">
+        <div class="container">
+          <div
+            id="signupBox"
+            class="boxContainer text-center p-3 p-md-4 rounded-2"
+          >
+            <h1 class="mt-5">Sign Up</h1>
+            <p class="text-primary mb-4">Quick and easy</p>
+            <div class="inputsForm">
+              <input
+                type="text"
+                id="signupName"
+                class="form-control"
+                placeholder="Enter your name"
+                required
+              />
+              <input
+                type="email"
+                id="signupEmail"
+                class="form-control mt-3"
+                placeholder="Enter your email"
+                required
+              />
+              <input
+                type="password"
+                id="signupPassword"
+                class="form-control mt-3"
+                placeholder="Enter your password"
+                required
+              />
+              <button id="signupBtn" class="btn btn-main my-4 w-100">
+                Sign up
+              </button>
+              <div class="loginText d-flex justify-content-center gap-2 mt-1">
+                <p>Already have an account?</p>
+                <a class="text-decoration-none" id="loginAnchor">Log in</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/sweetalert.min.js"></script>
+    <script src="./js/signup.js"></script>
+  </body>
+</html>
