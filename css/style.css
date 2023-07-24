@@ -18,7 +18,6 @@ h6 {
   color: var(--mainColor);
   font-weight: 600;
   letter-spacing: 0.9px;
-  position: relative;
 }
 
 ::selection {
@@ -80,6 +79,16 @@ main .form-control:focus {
   background-color: rgb(253 253 253 / 43%);
   box-shadow: -6px 10px 15px -5px rgba(0, 77, 165, 0.45);
   border: #004da413 1px solid;
+}
+
+.swal-button {
+  background-color: var(--mainColor);
+  border-color: var(--mainColor);
+}
+
+.swal-button:not([disabled]):hover {
+  background-color: #003694;
+  border-color: #003694;
 }
 
 @media screen and (max-width: 400px) {
