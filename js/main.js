@@ -12,6 +12,14 @@ if (localStorage.getItem("users") != null) {
 function signIn() {
   var loginEmail = loginEmailInput.value;
   var loginPassword = loginPasswordInput.value;
+
+  if (loginEmailInput.value === "" || loginPasswordInput.value === "") {
+    swal({
+      text: "Please fill in all fields",
+    });
+    return;
+  }
+
   if (isCorrectEmailAndPassword(loginEmail, loginPassword)) {
     window.location.href = "home.html";
   } else {
