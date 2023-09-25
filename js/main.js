@@ -1,17 +1,17 @@
-var loginEmailInput = document.getElementById("loginEmail");
-var loginPasswordInput = document.getElementById("loginPassword");
-var loginBtn = document.getElementById("loginBtn");
-var signupAnchor = document.getElementById("signupAnchor");
+let loginEmailInput = document.getElementById("loginEmail");
+let loginPasswordInput = document.getElementById("loginPassword");
+let loginBtn = document.getElementById("loginBtn");
+let signupAnchor = document.getElementById("signupAnchor");
 
-var users = [];
+let users = [];
 
 if (localStorage.getItem("users") != null) {
   users = JSON.parse(localStorage.getItem("users"));
 }
 
 function signIn() {
-  var loginEmail = loginEmailInput.value;
-  var loginPassword = loginPasswordInput.value;
+  let loginEmail = loginEmailInput.value;
+  let loginPassword = loginPasswordInput.value;
 
   if (loginEmailInput.value === "" || loginPasswordInput.value === "") {
     swal({
@@ -30,7 +30,7 @@ function signIn() {
 }
 
 function isCorrectEmailAndPassword(email, password) {
-  for (var i = 0; i < users.length; i++) {
+  for (let i = 0; i < users.length; i++) {
     if (users[i].email === email && users[i].password === password) {
       localStorage.setItem("userName", users[i].name);
       return true;

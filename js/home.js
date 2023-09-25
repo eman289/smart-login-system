@@ -1,6 +1,6 @@
-var logOutBtn = document.getElementById("logOutBtn");
-var welcomeUser = document.getElementById("userName");
-var userName = localStorage.getItem("userName");
+let logOutBtn = document.getElementById("logOutBtn");
+let welcomeUser = document.getElementById("userName");
+let userName = localStorage.getItem("userName");
 
 welcomeUser.innerHTML = "Welcome " + userName;
 

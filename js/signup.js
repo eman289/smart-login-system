@@ -1,17 +1,17 @@
-var signupBtn = document.getElementById("signupBtn");
-var signupNameInput = document.getElementById("signupName");
-var signupEmailInput = document.getElementById("signupEmail");
-var signupPasswordInput = document.getElementById("signupPassword");
-var loginAnchor = document.getElementById("loginAnchor");
+let signupBtn = document.getElementById("signupBtn");
+let signupNameInput = document.getElementById("signupName");
+let signupEmailInput = document.getElementById("signupEmail");
+let signupPasswordInput = document.getElementById("signupPassword");
+let loginAnchor = document.getElementById("loginAnchor");
 
-var users = [];
+let users = [];
 
 if (localStorage.getItem("users") != null) {
   users = JSON.parse(localStorage.getItem("users"));
 }
 
 function signUp() {
-  var user = {
+  let user = {
     name: signupNameInput.value,
     email: signupEmailInput.value,
     password: signupPasswordInput.value,
@@ -51,12 +51,12 @@ signupBtn.addEventListener("click", function () {
 });
 
 function isValidEmail(email) {
-  var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   return emailRegex.test(email);
 }
 
 function isNewEmail(email) {
-  for (var i = 0; i < users.length; i++) {
+  for (let i = 0; i < users.length; i++) {
     if (users[i].email === email) {
       return false;
     }
